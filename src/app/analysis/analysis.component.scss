@@ -1,0 +1,65 @@
+
+.selectDays {
+    position: relative;
+    div {
+        display: inline-block;
+    }
+    .daysGroup {
+        margin-left: 30px;
+    }
+    .selectValue {
+        border: 1px solid #ccc;
+        width: 100px;
+        border-radius: 5px;
+        padding: 2px 2px 2px 8px;
+        margin-left: 10px;
+        position: relative;
+        cursor: pointer;
+    }
+    .arrow {
+        position: absolute;
+        top: 9px;
+        right: 8px;
+        border: 8px solid #d9d9d9;
+        border-radius: 3px;
+        border-color: #d9d9d9 transparent transparent transparent; 
+    }
+    .dropdown {
+        list-style: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 28px;
+        border: 1px solid #ccc;
+        z-index: 10;
+        border-radius: 5px;
+        background-color: #fff;
+        width: 125px;
+        li {
+            box-sizing: border-box;
+            padding: 3px 5px 3px 9px;
+            &:hover {
+                background-color: #eee;
+            }
+        }
+    }
+    .daysDrop {
+        left: 133px;
+    }
+    .typesDrop {
+        left: 373px;
+    }
+    // .styleDrop {
+    //     left: 645px;
+    // }
+    .typesGroup {
+        margin-left: 30px;
+    }
+
+
+}
+
+.container_highcharts {
+    margin-top: 30px;
+}

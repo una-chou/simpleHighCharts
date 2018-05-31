@@ -1,0 +1,23 @@
+
+<div class="selectDays">
+    <div>
+        <span class="daysGroup">请选择天数 :</span>
+        <div class="daysValue selectValue">{{daysRange}}<div class="arrow arrowDay"></div></div>
+        <ul *ngIf="showDaysDropDown" class="dropdown daysDrop">
+            <li *ngFor="let day of daysList; let i = index" (click)="selectDay(day)">{{day}}</li>
+        </ul>
+    </div>
+    <div>
+        <span class="typesGroup">请选择类型 :</span>
+        <div class="typesValue selectValue">{{typesRange}}<div class="arrow arrowType"></div></div>
+        <ul *ngIf="showTypesDropDown" class="dropdown typesDrop">
+            <li *ngFor="let type of typesList; let i = index" (click)="selectType(type, i)">{{type}}</li>
+        </ul>
+    </div>
+</div>
+
+<!--highcharts 插件-->
+<div class="container_highcharts" #chart></div>
+
+
+
